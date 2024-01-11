@@ -40,7 +40,7 @@ div.c {
 
 
 /* TRANSFORM STYLE */
-#div1 {
+/* #div1 {
     position: relative;
     height: 200px;
     width: 200px;
@@ -56,7 +56,7 @@ div.c {
     border: 1px solid black;
     background-color: red;
     transform: rotateY(60deg);
-    transform-style: preserve-3d;   
+    transform-style: preserve-3d;       
   }
   
   #div3 {
@@ -66,4 +66,91 @@ div.c {
     background-color: yellow;
     transform: rotateY(-60deg);
   
+  } */
+
+/* TRANSITION  */
+/* TRANSITION PROPERTY , TRANSITON TIMING FUNCTION , TRANSITION TIMING FUNCTION , TRANSITION DELAY */
+/* h1 {
+    border: 2px solid black;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+div {
+    width: 100px;
+    height: 200px;
+    background: pink;
+    transition-property: width, height;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    transition-delay: 2s;
+
+}
+
+div:hover {
+    width: 300px;
+    height: 100px;
+} */
+
+/* ANIMATION */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 5s;
+   
+} */
+
+/* @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  } */
+/* @keyframes example {
+    0% {
+        background-color: red;
+        width: 200px;
+    }
+
+    25% {
+        background-color: pink;
+        width: 300px;
+    }
+
+    50% {
+        background-color: yellow;
+        width: 400px;
+    }
+
+    75% {
+        background-color: greenyellow;
+        width: 500px;
+    }
+
+    100% {
+        background-color: red;
+        width: 600px;
+    }
+} */
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
   }
